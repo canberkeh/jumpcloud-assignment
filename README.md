@@ -14,7 +14,7 @@ For mongodb_script.py:
     python mongodb_script.py
     ```
 
-## Part - 1 MongoDB
+## Part - 1 MongoDB
 
 Using mongodb_script.py will provide the following results:
 - Email address of all the customers.
@@ -23,7 +23,7 @@ Using mongodb_script.py will provide the following results:
 - Favorite beers with beer name, type and the number of customers who have that beer as their favorite.
 - Creates and output json file with the data above.
 
-## Part - 2
+## Part - 2
 
 ### Script: jc_script.py
 
