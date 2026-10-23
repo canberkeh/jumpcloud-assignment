@@ -26,18 +26,18 @@ Using mongodb_script.py will provide the following results:
 ## Part 2
 ### jc_script.py
 Used Jumpcloud API v1 and v2. Using the jc_script.py will provide the following results:
-part-2/source.md contains the sources used for this part.
+[View source.md](part-2/source.md) contains the sources used for this part.
 - Create and activate 2 Users.
 - Create a User Group.
 - Associate the 2 Users to the User Group.
 - Associate one User to the recently added system.
 
 ### Tasks on Jumpcloud:
-3-  
+3-  Set agent logs to DEBUG on your system and provide a copy of the agent logs
 ```
     echo "DEBUG" | sudo tee /opt/jc/loglevel.cache && sudo launchctl stop com.jumpcloud.darwin-agent
 ```
-part-2/ldap-outputs/debug.log.txt.  
+- Agent Logs: [View debug.logs.txt](part-2/ldap-outputs/debug.log.txt)
 4- ![LDAP](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/ldap.png)
  - ![LDAP User Groups](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/ldap_user_groups.png)
  - ![LDAP Users in User Group](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/users_in_user_group.png)
@@ -47,10 +47,10 @@ part-2/ldap-outputs/debug.log.txt.
     ```
     ldapsearch -H ldaps://ldap.jumpcloud.com:636 -x -b "ou=Users,o={ORG_ID},dc=jumpcloud,dc=com" -D "uid=TestUser33,ou=Users,o={ORG_ID},dc=jumpcloud,dc=com" -W "(objectClass=inetOrgPerson)"
     ```
-    part-2/ldap-outputs/ldapsearch_output.txt
+    All users output: [View ldapsearch_output.txt](part-2/ldap-outputs/ldapsearch_output.txt)
 
   - Just the users in one specifc user group (your choice of the two groups you created) and only returning the users email, firstname, and lastname.
     ```
     ldapsearch -H ldaps://ldap.jumpcloud.com:636 -x -b "ou=Users,o={ORG_ID},dc=jumpcloud,dc=com" -D "uid=TestUser33,ou=Users,o={ORG_ID},dc=jumpcloud,dc=com" -W "(&(objectClass=inetOrgPerson)(memberOf=cn=TestUserGroup3,ou=Users,o={ORG_ID},dc=jumpcloud,dc=com))" email givenName sn
     ```
-    part-2/ldap-outputs/ldapsearch_output_filtered.txt
+    All users output filtered: [View ldapsearch_output_filtered.txt](part-2/ldap-outputs/ldapsearch_output_filtered.txt)
