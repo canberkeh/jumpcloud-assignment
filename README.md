@@ -14,7 +14,7 @@ For mongodb_script.py:
     python mongodb_script.py
     ```
 
-## Part 1 - MongoDB
+## Part - 1 MongoDB
 
 Using mongodb_script.py will provide the following results:
 - Email address of all the customers.
@@ -23,7 +23,7 @@ Using mongodb_script.py will provide the following results:
 - Favorite beers with beer name, type and the number of customers who have that beer as their favorite.
 - Creates and output json file with the data above.
 
-## Part 2
+## Part - 2
 
 ### Script: jc_script.py
 
@@ -39,9 +39,10 @@ Used Jumpcloud API v1 and v2. Using the jc_script.py will provide the following 
 ```
     echo "DEBUG" | sudo tee /opt/jc/loglevel.cache && sudo launchctl stop com.jumpcloud.darwin-agent
 ```
+
 - Agent Logs: [View debug.logs.txt](part-2/ldap-outputs/debug.log.txt)
 
-- Configure LDAP for your organization in the JumpCloud Admin Portal
+4- Configure LDAP for your organization in the JumpCloud Admin Portal
   
 ![LDAP](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/ldap.png)
 
