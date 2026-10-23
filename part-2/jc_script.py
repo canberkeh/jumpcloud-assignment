@@ -33,7 +33,7 @@ def create_user(user: dict) -> str:
             return created_user_id
     except Exception as e:
         print(f"Error creating users: {e}")
-    return None
+    return ""
 
 def activate_user(user_id: str) -> bool:
     endpoint = f"api/systemusers/{user_id}/state/activate"
