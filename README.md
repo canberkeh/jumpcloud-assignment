@@ -35,7 +35,11 @@ Used Jumpcloud API v1 and v2. Using the jc_script.py will provide the following 
 - Associate one User to the recently added system.
 
 ### Tasks on Jumpcloud:
-3-  Set agent logs to DEBUG on your system and provide a copy of the agent logs
+2- Log in to the system as the JumpCloud managed user
+
+
+
+3- Set agent logs to DEBUG on your system and provide a copy of the agent logs
 ```
     echo "DEBUG" | sudo tee /opt/jc/loglevel.cache && sudo launchctl stop com.jumpcloud.darwin-agent
 ```
