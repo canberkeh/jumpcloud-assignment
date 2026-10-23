@@ -37,6 +37,7 @@ Used Jumpcloud API v1 and v2. Using the jc_script.py will provide the following 
 ### Tasks on Jumpcloud:
 2- Log in to the system as the JumpCloud managed user
 
+![Jumpcloud Managed User](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/jc_managed_user.png)
 
 
 3- Set agent logs to DEBUG on your system and provide a copy of the agent logs
