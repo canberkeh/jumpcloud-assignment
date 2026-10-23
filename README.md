@@ -10,9 +10,9 @@ For the secrets, create and fill the `.env` file. `env.sample` file is provided 
 ## Usage
 For mongodb_script.py:
     
-    ```
-    python mongodb_script.py
-    ```
+```
+python mongodb_script.py
+```
 
 ## Part - 1 MongoDB
 
