@@ -1,0 +1,24 @@
+# extended LDIF
+#
+# LDAPv3
+# base <ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com> with scope subtree
+# filter: (&(objectClass=inetOrgPerson)(memberOf=cn=TestUserGroup3,ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com))
+# requesting: email givenName sn 
+#
+
+# TestUser33, Users, 66983c51208c8fcdf4288780, jumpcloud.com
+dn: uid=TestUser33,ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com
+givenName: Test33
+sn: User33
+
+# TestUser44, Users, 66983c51208c8fcdf4288780, jumpcloud.com
+dn: uid=TestUser44,ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com
+givenName: Test44
+sn: User44
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 3
+# numEntries: 2

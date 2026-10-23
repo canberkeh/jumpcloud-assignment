@@ -1,0 +1,75 @@
+# extended LDIF
+#
+# LDAPv3
+# base <ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com> with scope subtree
+# filter: (objectClass=inetOrgPerson)
+# requesting: ALL
+#
+
+# TestUser22, Users, 66983c51208c8fcdf4288780, jumpcloud.com
+dn: uid=TestUser22,ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com
+cn: Test22 User22
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: jumpcloudUser
+uidNumber: 5009
+uid: TestUser22
+gidNumber: 5009
+loginShell: /bin/bash
+homeDirectory: /home/TestUser22
+mail: testuser22@gmail.com
+givenName: Test22
+sn: User22
+
+# TestUser11, Users, 66983c51208c8fcdf4288780, jumpcloud.com
+dn: uid=TestUser11,ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com
+loginShell: /bin/bash
+mail: testuser11@gmail.com
+sn: User11
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: jumpcloudUser
+uid: TestUser11
+uidNumber: 5008
+homeDirectory: /home/TestUser11
+givenName: Test11
+cn: Test11 User11
+gidNumber: 5008
+
+# TestUser33, Users, 66983c51208c8fcdf4288780, jumpcloud.com
+dn: uid=TestUser33,ou=Users,o=66983c51208c8fcdf4288780,dc=jumpcloud,dc=com
+loginShell: /bin/bash
+givenName: Test33
+sn: User33
+cn: Test33 User33
+uid: TestUser33
+userPassword:: e0NSWVBUfSQ2JHBxVEEuVlBlS3NlOHJ1MXgkRU1Ub1ZINjJUbzU5c3pnWmZTSTg
+ 0RTRQRjJ5czBBbUs3dzVVUkFiVzBkY3pnbWF6MHpUWFk4UVpHVkRCR0ljRFNBWXJDV2tqUzIyd2k0
+ eVkuUmZSWi4=
+uidNumber: 5010
+gidNumber: 5010
+homeDirectory: /home/TestUser33
+mail: testuser33@gmail.com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: shadowAccount
+objectClass: posixAccount
+objectClass: jumpcloudUser
+jcLdapAdmin: TRUE
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 4
+# numEntries: 3
