@@ -38,6 +38,7 @@ Used Jumpcloud API v1 and v2. Using the jc_script.py will provide the following 
     echo "DEBUG" | sudo tee /opt/jc/loglevel.cache && sudo launchctl stop com.jumpcloud.darwin-agent
 ```
 - Agent Logs: [View debug.logs.txt](part-2/ldap-outputs/debug.log.txt)
+
 4- ![LDAP](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/ldap.png)
  - ![LDAP User Groups](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/ldap_user_groups.png)
  - ![LDAP Users in User Group](https://github.com/canberkeh/jumpcloud-assignment/blob/main/part-2/assets/users_in_user_group.png)
